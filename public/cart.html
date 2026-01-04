@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AlphaStore</div>
+        <div class="nav-links">
+            <a href="index.html">Shop</a>
+            <a href="cart.html" class="active">Cart</a>
+        </div>
+    </nav>
+
+    <div class="container cart-page">
+        <h2>Your Shopping Cart</h2>
+        <div id="cart-items">
+            </div>
+        <div class="cart-summary">
+            <h3>Total: $<span id="total-price">0</span></h3>
+            <input type="text" id="customer-name" placeholder="Enter your Name" required>
+            <button onclick="checkout()" class="btn-checkout">Place Order</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', loadCart);
+    </script>
+</body>
+</html>

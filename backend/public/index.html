@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaStore | Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AlphaStore</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Shop</a>
+            <a href="cart.html">Cart <span id="cart-count">0</span></a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Summer Collection 2025</h1>
+        <p>Best gadgets and accessories for you.</p>
+    </header>
+
+    <div class="container">
+        <h2>Featured Products</h2>
+        <div id="product-list" class="product-grid">
+            <p class="loading">Loading products...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', loadProducts);
+    </script>
+</body>
+</html>     
